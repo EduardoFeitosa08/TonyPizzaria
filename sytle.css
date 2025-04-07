@@ -10,3 +10,20 @@ a{
 ul,ol,li{
     list-style: none;
 }
+body{
+
+}
+header{
+    position: absolute;
+    height: 60px;
+    width: 100%;    
+    background-color: cyan;
+}
+main{
+    height: 700px;
+    background-color: hotpink;
+}
+footer{
+    height: 526px;
+    background-color: red;
+}
