@@ -336,3 +336,102 @@ footer{
     font-style: italic;
     width: 100%;
 }
+
+/* media é como um if so que no CSS*/
+@media (max-width: 1024px){
+    header{
+        /*a referencia de posicao é do pai dele*/
+        position: absolute;
+        background-color: transparent;
+    }
+
+    header menu{
+        height: 64px;
+        width: 100vw;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        color: white;
+        background-color: var(--primary-color);
+        justify-content: space-evenly;
+    }
+
+    .home{
+        grid-template-rows: none;
+    }
+
+    .home .container-produtos{
+        display: none;
+    }
+
+    .hero{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .produto:nth-child(3),
+    .produto:nth-child(4){
+        display: none;
+    }
+
+    .cardapio-item.bebidas .produto:nth-child(n+4){
+        display: none;
+    }
+
+    .cardapio-item.bebidas img{
+        width: auto;
+    }
+    
+    .container-produtos{
+        gap: 16px;
+    }
+
+    .produto{
+        width: 100%;
+    }
+
+    .produto img{
+        width: 100%;
+    }
+
+    .servico-item{
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .servico-card{
+        width: 100%;
+        height: 260px;
+        flex-wrap: wrap;
+    }
+    
+    .servico-card p{
+        width: 320px;
+    }
+
+    .contato-item.links {
+        display: none;
+    }
+
+    .contatos-container{
+        height: 400px;
+        width: 60%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: start;
+        gap: 32px;
+    }
+    .contato-item{
+        padding: 0;
+    }
+
+    .social li {
+        justify-content: end;
+    }
+
+    .copyright{
+        margin-bottom: 64px;
+    }
+
+}
