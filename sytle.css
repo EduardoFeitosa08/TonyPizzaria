@@ -337,6 +337,8 @@ footer{
     width: 100%;
 }
 
+/*TABLET*/
+
 /* media é como um if so que no CSS*/
 @media (max-width: 1024px){
     header{
@@ -433,5 +435,102 @@ footer{
     .copyright{
         margin-bottom: 64px;
     }
+
+}
+
+/*MOBILE*/
+
+@media (max-width: 768px){
+    header{
+        padding: 12px;
+    }
+    
+    header .logo{
+
+    }
+
+    header menu{
+        height: 64px;
+        width: 100vw;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        color: white;
+        background-color: var(--primary-color);
+        gap: 13px;
+    }
+
+    .home{
+        background-image: url(./img/pizza-fundo.jpg);
+        background-size: 160vh;
+        background-position: center;
+    }
+
+    .hero{
+        grid-template-rows: none;
+        place-content: end;
+        padding: 0;
+    }
+
+    .hero img{
+        display: none;
+    }
+
+    .hero h2{
+        width: 287px;
+        font-size: 40px;
+        color: white;
+    }
+
+    .hero span{
+        background-color: white;
+    }
+
+    .contatos-container{
+        display: flex;
+        flex-direction: row;
+        padding-top: 56px;
+    }
+
+    .contato-item{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .contato-item h4{
+        text-align: center;
+    }
+
+    .cabecalho-item h4{
+        text-align: center;
+    }
+
+    .cabecalho-item a{
+        display: none;
+    }
+
+    .cardapio-item.bebidas .produto:nth-child(n+2){
+        display: none;
+    }
+
+    .servico-card p{
+        display: none;
+    }
+
+    .social menu{
+        flex-direction: row;
+    }
+
+    .social li{
+        width: 50px;
+    }
+
+    footer{
+        height: 600px;
+    }
+    .copyright{
+        text-align: center;
+    }
+
 
 }
